@@ -10,6 +10,6 @@ import org.springframework.stereotype.Repository;
 public interface CustomZxhMapper {
     @Insert("INSERT INTO custom_zxh (id,question)" +
             " VALUES " +
-            "(#{id},#{question}")
+            "(#{id},#{question})")
     int addQuestions(@Param("id") Integer id,@Param("question") String question);
 }
