@@ -1,19 +1,9 @@
-package com.example.entity;
+package com.example.dto;
 
-public class custom_zxh {
-    private Integer id;
-
+public class CustomQuestionDTO {
     private String username;
 
     private String question;
-
-    public Integer getId() {
-        return id;
-    }
-
-    public void setId(Integer id) {
-        this.id = id;
-    }
 
     public String getUsername() {
         return username;
@@ -33,9 +23,8 @@ public class custom_zxh {
 
     @Override
     public String toString() {
-        return "custom_zxh{" +
-                "id=" + id +
-                ", username='" + username + '\'' +
+        return "CustomQuestionDTO{" +
+                "username='" + username + '\'' +
                 ", question='" + question + '\'' +
                 '}';
     }

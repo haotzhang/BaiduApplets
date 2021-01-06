@@ -1,6 +1,6 @@
 package com.example.entity;
 
-public class custom_zxh {
+public class custom_dmx {
     private Integer id;
 
     private String username;
@@ -33,7 +33,7 @@ public class custom_zxh {
 
     @Override
     public String toString() {
-        return "custom_zxh{" +
+        return "custom_dmx{" +
                 "id=" + id +
                 ", username='" + username + '\'' +
                 ", question='" + question + '\'' +

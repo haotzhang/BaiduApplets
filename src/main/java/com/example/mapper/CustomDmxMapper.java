@@ -10,15 +10,17 @@ import java.util.ArrayList;
 
 @Repository
 @Mapper
-public interface CustomZxhMapper {
-    @Insert("INSERT INTO custom_zxh (id,username,question)" +
+public interface CustomDmxMapper {
+
+    @Insert("INSERT INTO custom_dmx (id,username,question)" +
             " VALUES " +
             "(#{id},#{username},#{question})")
-    int addQuestions(@Param("id") Integer id,@Param("username") String username,@Param("question") String question);
+    int addQuestions(@Param("id") Integer id, @Param("username") String username, @Param("question") String question);
 
-    @Select("SELECT MAX(id) FROM custom_zxh")
+    @Select("SELECT MAX(id) FROM custom_dmx")
     int getMaxId();
 
-    @Select("SELECT question FROM custom_zxh WHERE username=#{username}")
+    @Select("SELECT question FROM custom_dmx WHERE username=#{username}")
     ArrayList<String> getAllCustomQuestion(@Param("username") String username);
+
 }

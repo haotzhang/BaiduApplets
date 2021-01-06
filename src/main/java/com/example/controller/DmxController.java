@@ -21,7 +21,6 @@ public class DmxController{
 
     @PostMapping("getAllQuestions")
     public List<String> getAllQuestions(@RequestBody String level){
-        System.out.println(level);
         return dmxService.getAllQuestions(Integer.parseInt(level));
     }
 }
