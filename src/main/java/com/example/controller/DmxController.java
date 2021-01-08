@@ -20,7 +20,7 @@ public class DmxController{
     }
 
     @PostMapping("getAllQuestions")
-    public List<String> getAllQuestions(@RequestBody String level){
-        return dmxService.getAllQuestions(Integer.parseInt(level));
+    public List<String> getAllQuestions(@Param("username") String username,@Param("level") String level){
+        return dmxService.getAllQuestions(username,Integer.parseInt(level));
     }
 }

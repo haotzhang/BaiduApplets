@@ -6,6 +6,6 @@ public interface ZxhService {
 
     String getQuestion(Integer id);
 
-    List<String> getAllQuestions(Integer level);
+    List<String> getAllQuestions(String username,Integer level);
 
 }

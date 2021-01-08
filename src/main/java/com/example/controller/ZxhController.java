@@ -22,8 +22,8 @@ public class ZxhController {
     }
 
     @PostMapping("getAllQuestions")
-    public List<String> getAllQuestions(@RequestBody String level){
-        return zxhService.getAllQuestions(Integer.parseInt(level));
+    public List<String> getAllQuestions(@Param("username") String username, @Param("level") String level){
+        return zxhService.getAllQuestions(username,Integer.parseInt(level));
     }
 
 }
